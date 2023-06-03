@@ -1,0 +1,54 @@
+<div class="flex justify-center align-middle place-items-center w-screen mt-14">
+  <form class="w-5/6" #addteacher="ngForm" (ngSubmit)="addTeacher(addteacher)">
+    <div class="w-full">
+      <input
+        name="teachername"
+        [(ngModel)]="teacher.fullName"
+        #name="ngModel"
+        class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+        placeholder="Teacher Name"
+      />
+    </div>
+    <div class="w-full">
+      <input
+        name="teachereducation"
+        [(ngModel)]="teacher.education"
+        #education="ngModel"
+        class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+        placeholder="Education"
+        type="text"
+      />
+    </div>
+    <div class="mt-10">
+      Login Informations:
+    </div>
+    <div class="w-full">
+      <input
+        name="teacherusername"
+        [(ngModel)]="teacher.user.username"
+        #username="ngModel"
+        class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+        placeholder="Username"
+        type="text"
+      />
+    </div>
+    <div class="w-full">
+      <input
+        name="password"
+        [(ngModel)]="teacher.user.password"
+        #password="ngModel"
+        class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <div class="w-full">
+      <button
+        type="submit"
+        class="rounded-lg w-full bg-[#00ABEB] text-xl text-white p-2 mt-4 shadow-sm hover:shadow-xl duration-500"
+      >
+        Share
+      </button>
+    </div>
+  </form>
+</div>

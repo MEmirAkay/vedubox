@@ -1,0 +1,22 @@
+<table class="table-fixed w-full">
+  <thead class="text-left">
+    <tr>
+      <th>Name Surname</th>
+      <th>Education</th>
+      
+      <th></th>
+    </tr>
+  </thead>
+  <tbody class=" text-left">
+    <tr *ngFor="let teacher of teachers" class="px-5">
+      <td class="mx-5">{{ teacher.fullName }}</td>
+      <td class="mx-5">{{ teacher.education }}</td>
+      
+      <td class="mx-5">
+        <button (click)="vievTeacher(teacher.teacherId)" class="bg-slate-300 hover:bg-slate-400 text-white ease-in-out duration-100 rounded-md font-semibold w-full">
+            Details
+          </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

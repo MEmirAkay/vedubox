@@ -1,0 +1,30 @@
+<div class="felx flex-row justify-center w-screen h-screen">
+    <div class="flex flex-col justify-center">
+      <div class="flex flex-col border-2 m-5">
+        <div class="text-center">Student Details</div>
+        <div class="block md:grid grid-cols-12 m-5">
+          <div class="col-span-4 border-2 block md:flex justify-center">
+            <img src="assets/img/user.png" width="980" height="720" />
+          </div>
+          <div
+            class="col-span-8 block md:flex flex-col px-5 md:mt-0 mt-10"
+          >
+            <div class=" font-bold text-3xl">{{ student.fullName }}<div>
+            <div class=" font-bold text-xl"><label>Education: </label>{{ student.education }}</div>
+            <div><label>Fee: </label>{{ student.fees }}</div>
+            <div class="mt-5">
+              <label>Enrolled Courses: </label>
+                <div>
+                    <app-courselist [UserId]="student.studentId"></app-courselist>
+                </div>
+            </div>
+            
+            <div class="mt-10">
+            <!-- <button class="p-4 hover:bg-emerald-700 ease-in-out duration-100 rounded-md bg-emerald-300 text-white font-semibold w-full">Enroll</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

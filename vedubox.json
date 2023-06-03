@@ -1,0 +1,138 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "1Angular ile web geliştirme",
+      "teacher": "Engin Demioğ",
+      "date": "10.10.2022"
+    },
+    {
+      "id": 2,
+      "name": "2Angular ile web geliştirme",
+      "teacher": "Engin Demioğ",
+      "date": "10.10.2022"
+    },
+    {
+      "id": 3,
+      "name": "3Angular ile web geliştirme",
+      "teacher": "Engin Demioğ",
+      "date": "10.10.2022"
+    },
+    {
+      "id": 4,
+      "name": "4Angular ile web geliştirme",
+      "teacher": "Engin Demioğ",
+      "date": "10.10.2022"
+    },
+    {
+      "id": 5,
+      "name": "5Angular ile web geliştirme",
+      "teacher": "Engin Demioğ",
+      "date": "10.10.2022"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Ali",
+      "surname": "Veli",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    },
+    {
+      "id": 2,
+      "name": "Mehmet",
+      "surname": "Mehmetoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    },
+    {
+      "id": 3,
+      "name": "Mahmut",
+      "surname": "Mahmutoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    },
+    {
+      "id": 4,
+      "name": "Kazım",
+      "surname": "Kazımoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    },
+    {
+      "id": 5,
+      "name": "Haydar",
+      "surname": "Haydaroğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    },
+    {
+      "id": 6,
+      "name": "Kadir",
+      "surname": "Kadiroğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3],
+      "fees":"12345"
+    }
+
+  ],
+  "teachers":[
+    {
+      "id": 1,
+      "name": "Ali",
+      "surname": "Veli",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+      
+    },
+    {
+      "id": 2,
+      "name": "Mehmet",
+      "surname": "Mehmetoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    },
+    {
+      "id": 3,
+      "name": "Mahmut",
+      "surname": "Mahmutoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    },
+    {
+      "id": 4,
+      "name": "Kazım",
+      "surname": "Kazımoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    },
+    {
+      "id": 5,
+      "name": "Haydar",
+      "surname": "Haydaroğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    },
+    {
+      "id": 6,
+      "name": "Kadir",
+      "surname": "Kadiroğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    },
+    {
+      "id": 7,
+      "name": "Mustafa",
+      "surname": "Mustafaoğlu",
+      "education":"Üniversite",
+      "courses":[1,2,3]
+    }
+  ]
+
+}

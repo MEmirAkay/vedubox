@@ -1,0 +1,47 @@
+<div class="flex justify-center align-middle place-items-center w-screen mt-14">
+    <form class="w-5/6" #addCourseForm="ngForm" (ngSubmit)="addCourse(addCourseForm)">
+          <div class="w-full">
+            <input
+              name="coursename"
+              [(ngModel)]="course.name"
+              #name="ngModel"
+              class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+              placeholder="Course Name"
+            />
+          </div>
+          <div class="w-full">
+            <select required="true" (change)="setTeacher($event)" [(ngModel)]="teacherId" teacherName="teacherId" class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300">
+              
+              <option *ngFor="let x of teachers" [ngValue]="x.teacherId">{{x.fullName}}</option>
+            </select>
+          </div>
+          <div class="w-full">
+            <input
+              name="date"
+              [(ngModel)]="course.date"
+              #date="ngModel"
+              class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+              placeholder="Password"
+              type="date"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              name="description"
+              [(ngModel)]="course.description"
+              #description="ngModel"
+              class="w-full bg-transparent border-b-2 my-2 p-1 focus:border-[#00ABEB] outline-none duration-300"
+              placeholder="Description"
+              type="text"
+            />
+          </div>
+          <div class="w-full">
+            <button
+              type="submit"
+              class="rounded-lg w-full bg-[#00ABEB] text-xl text-white p-2 mt-4 shadow-sm hover:shadow-xl duration-500"
+            >
+              Share
+            </button>
+          </div>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<table class="table-fixed w-full">
+    <thead class=" text-left">
+        <tr>
+            <th>
+                Name Surname
+            </th>
+            <th>
+                Education
+            </th>
+            <th>
+                Fee
+            </th>
+        </tr>
+    </thead>
+    <tbody class=" text-left">
+        <tr *ngFor="let student of students" >
+        
+            <td>{{student.fullName}}</td>
+          <td>{{student.education}}</td>
+          <td>{{student.fees}}</td>
+          <td><button (click)="viewStudent(student.studentId)" class="bg-slate-300 hover:bg-slate-400 text-white ease-in-out duration-100 rounded-md font-semibold w-full">Details</button></td>
+        
+        </tr>
+        
+      </tbody>
+    </table>

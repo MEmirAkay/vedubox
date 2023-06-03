@@ -1,0 +1,29 @@
+<table class="table-fixed w-full">
+<thead class=" text-left">
+    <tr>
+        <th>
+            Course Name
+        </th>
+        <th>
+            Teacher
+        </th>
+        <th>
+            Date
+        </th>
+        <th>
+           
+        </th>
+    </tr>
+</thead>
+<tbody class=" text-left" *ngIf="courses != undefined">
+    <tr *ngFor="let course of courses" >
+    
+        <td>{{course.name}}</td>
+      <td>{{course.teacherName}}</td>
+      <td>{{course.date}}</td>
+      <td><button (click)="viewCourse(course.courseId)" class="bg-slate-300 hover:bg-slate-400 text-white ease-in-out duration-100 rounded-md font-semibold w-full">Details</button></td>
+    
+    </tr>
+    
+  </tbody>
+</table>
